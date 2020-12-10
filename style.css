@@ -1,0 +1,333 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #3a3635;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.col-left {
+  background-image: url("assets//Picture.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-left .logo {
+  max-width: 260px;
+}
+.col-left h2 {
+  color: #fff;
+  font-size: 48px;
+  position: relative;
+  margin: 15px 0;
+  padding-bottom: 20px;
+}
+.col-left h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  height: 5px;
+  width: 90px;
+  background-color: #fff;
+}
+
+.col-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  overflow: auto;
+  padding: 20px;
+}
+
+.language {
+  text-transform: uppercase;
+  margin: 0 30px 30px auto;
+  max-width: 180px;
+  text-align: right;
+  position: relative;
+}
+.language-toggle {
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  background: url("./assets/drop-down-arrow.png") right center no-repeat;
+  background-size: 12px;
+  padding: 10px 20px;
+}
+
+.connection-container {
+  width: 260px;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 100%;
+}
+
+.connection-container form h3 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 20px;
+}
+.form-group label {
+  font-weight: 600;
+  color: #3a3635;
+  margin-bottom: 5px;
+}
+.form-group input {
+  height: auto;
+  padding: 15px;
+  border: 2px solid #cdcdcb;
+  border-radius: 2px;
+}
+
+.btn-connection {
+  padding: 15px;
+  width: calc(100% + 100px);
+  margin-left: -50px;
+  background-color: #eb954b;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.forgot-password,
+.forgot-password a
+ {
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: #3a3635;
+
+}
+
+
+.line-heading {
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+}
+.line-heading span {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b4748;
+  position: relative;
+  z-index: 1;
+}
+.line-heading::after {
+  content: "";
+  display: block;
+  border-top: 1px solid #3a3635;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+.social-connection-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-connection-google {
+  padding: 15px 0px;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  background-color: #806e6c;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-connection-fb {
+  padding: 15px 0px;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  background-color: #daaa85;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.registration {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: #4a4444;
+  margin: 30px;
+}
+
+.social-container .line-heading {
+  width: calc(100% + 180px);
+  margin-left: -90px;
+}
+.social-icon-container {
+  text-align: center;
+}
+
+.social-icon-container a {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  line-height: 40px;
+  margin: 1px;
+  text-decoration: none;
+  display: inline-block;
+}
+.social-icn-fb {
+  background: #f2cda5;
+}
+.social-icn-twitter {
+  background: #e29854;
+}
+.social-icn-google {
+  background: #443838;
+}
+.social-icn-pinterest {
+  background: #d6ad8c;
+}
+.social-icn-linkedin {
+  background: #8a7272;
+}
+.social-icon-container a i {
+  color: white;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #3b3132;
+  color: #ccc;
+  padding: 20px 10px 20px 40px;
+}
+
+footer span {
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+  .btn-connection {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .social-container .line-heading {
+    width: calc(100% + 80px);
+    margin-left: -40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .col-left,
+  .col-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
